@@ -1,0 +1,277 @@
+
+
+
+
+.product-card .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product-card .buy-now a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.product-card .add-to-cart {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.product-card .buy-now {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.product-card .btn:hover {
+    opacity: 0.9;
+}
+
+.product-card .buy-now a:hover {
+    color: white; /* Ensures text color remains white on hover */
+}
+
+
+
+
+
+
+
+
+
+/* Base styles for the container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Styles for the filter section */
+.filter-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filter-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Styles for the category list */
+.filter-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.filter-section ul li {
+    margin-bottom: 10px;
+}
+
+.filter-section ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.filter-section ul li a:hover {
+    color: #0056b3;
+}
+
+/* Styles for form elements */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Styles for buttons */
+.btn {
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #4e555b;
+}
+
+/* Styles for sorting and show count */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+select.form-control {
+    max-width: 120px;
+}
+
+
+/* Grid Layout for the Information Section */
+.info-section ul {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid columns */
+    gap: 1rem; /* Space between grid items */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list styling */
+}
+
+.info-section ul li {
+    text-align: center; /* Center text inside each grid item */
+}
+
+.info-section ul li a {
+    color: #f7f9fa; /* Light color for links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make links block-level to fill grid item */
+    padding: 0.5rem; /* Padding for better click area */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.info-section ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+
+
+
+
+
+
+.accordion-button {
+    background-color: #f8f9fa; /* Background color for the button */
+    color: #212529; /* Text color */
+    border: 1px solid #dee2e6; /* Border color */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd; /* Color when the item is expanded */
+    background-color: #e9ecef; /* Background color when expanded */
+    border-color: #0d6efd; /* Border color when expanded */
+}
+
+.accordion-body {
+    font-size: 1rem; /* Font size for the body */
+    line-height: 1.5; /* Line height for readability */
+}
+
+
+
+
+
+
+/* Enhance the carousel animation */
+.carousel-item {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect on carousel controls */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Smooth fade-in and zoom effect */
+.carousel-item img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item.active img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.carousel-item img {
+    opacity: 0.7;
+}
+
+/* Add shadow to the images for better visuals */
+.carousel-item img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Make the carousel control buttons more visible */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Add smooth hover transition to buttons */
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Custom indicators (optional) */
+.carousel-indicators [data-bs-target] {
+    background-color: #ff6347;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
